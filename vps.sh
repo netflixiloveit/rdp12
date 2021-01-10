@@ -1,10 +1,14 @@
 #! /bin/bash
+##code By Linuxinet##
+RED='\033[0;31m'
+GREEN='\33[0;32m'
+NC='\033[0m'
+printf "${RED}User successfully created :- Ubuntu${NC}\n"
+printf "${RED}Password successfully created :- 1234${NC}\n"
 
-echo " User successfully created :- Ubuntu "
-echo " Password successfully created :- 1234 "
 
 
-printf "Installing RDP Be Patience... " >&2
+printf "${GREEN}Installing RDP Be Patience....${NC}" >&2
 {
 sudo useradd -m Ubuntu
 sudo adduser Ubuntu sudo
