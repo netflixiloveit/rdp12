@@ -1,8 +1,8 @@
 #! /bin/bash
-echo "Enter the user name: "  
-read user_name
-echo "Enter the password(4-6 character) : "  
-read pass 
+read -p "Enter the user name: " user_name
+
+read -p "Enter the password(4-6 character) : " pass
+
 
 printf "Installing RDP Be Patience... " >&2
 {
