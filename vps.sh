@@ -1,14 +1,14 @@
 #! /bin/bash
-read -p "Enter the user name: "user_name
+read -p "Enter the user name: " user_name
 
-read -p "Enter the password(4-6 character) : "pass
+echo " Password successfully created :- root "
 
 
 printf "Installing RDP Be Patience... " >&2
 {
 sudo useradd -m $user_name
 sudo adduser $user_name sudo
-echo '$user_name:$pass' | sudo chpasswd
+echo '$user_name:root' | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 sudo apt-get update
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
